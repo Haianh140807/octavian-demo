@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>Shop Cầu Lông</title>
+
+    <!-- CSS -->
+    <link href="css/tutaoo.css" rel="stylesheet" style="text/css" />
+     <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
+ 
+ 
+</head>
+
+<body>
+    <div class="baotrang">
+        <div class="header">
+            <!-- Logo đăng nhập -->
+            <div class="logo-small">
+                <a href="trangchu.html">
+                    <img src="HA/cc-removebg-preview.png" width="45" height="50">
+                </a>
+            </div>
+
+            <!-- Logo lớn -->
+            <div class="logo-large" style="float:left">
+                <a href="trangchu.html">
+                    <img src="HA/dcm.png" width="160" height="55">
+                </a>
+            </div>
+            
+            <div style="width:100%">
+                <center>
+                    <!-- Thanh tìm kiếm -->
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Tìm kiếm sản phẩm...">
+                        <button class="search-button" onclick="searchProduct()">Tìm kiếm</button>
+                    </div>
+                </center>
+            </div>
+            
+            <!-- Icon đăng nhập -->
+            <div class="login-icon" id="loginIconContainer">
+                <a href="dangnhap.html" id="loginLink">
+                    <img id="loginIcon" src="HA/lop.png" width="50" height="50">
+                </a>
+                <!-- Thông tin người dùng -->
+                <div class="user-info" id="userInfo">
+                    <p><strong>Tài khoản:</strong> <span id="username"></span></p>
+                    <p><strong>ID:</strong> <span id="userId"></span></p>
+                    <p><strong>Số dư:</strong> <span id="userBalance">0</span> VND</p>
+                    <p><strong>Sản phẩm đã mua:</strong></p>
+                    <ul id="purchasedProducts"></ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="menu">
+            <ul>
+                <li><a href="trangchu.html">TRANG CHỦ</a></li>
+                <li><a href="#sanpham">SẢN PHẨM</a>
+                    <ul class="sub-menu">
+                        <li><a href="Vợt cầu lông.html">Vợt Cầu Lông</a></li>
+                        <li><a href="Giày cầu lông.html">Giày Cầu Lông</a></li>
+                        <li><a href="Áo cầu lông.html">Áo Cầu Lông</a></li>
+                        <li><a href="Váy cầu lông.html">Váy Cầu Lông</a></li>
+                        <li><a href="Quần cầu lông.html">Quần Cầu Lông</a></li>
+                        <li><a href="Túi cầu lông.html">Túi Vợt</a></li>
+                        <li><a href="Balo cầu lông.html">Balo </a></li>
+                        <li><a href="Phụ kiện cầu lông.html">Phụ Kiện</a></li>
+                    </ul>
+                </li>
+                <li><a href="sale off.html">SALE OFF</a></li>
+                <li><a href="tin tức.html">TIN TỨC</a></li>
+                <li><a href="hướng dẫn.html">HƯỚNG DẪN</a></li>
+                <li><a href="lienhe.html">LIÊN HỆ</a></li>
+            </ul>
+        </div><br>
+ <div class="trung-bay-san-pham">
+        <div class="container-san-pham">
+            <div class="hinh-anh-san-pham">
+                <!-- Hình ảnh chính -->
+               <img id="mainProductImage" 
+     src="HA/anh vot/Vợt cầu lông Apacs Versus Pro New 2.400.000 ₫.png" 
+     alt="Vợt Cầu Lông" 
+     width="500" 
+     height="450">
+                <!-- Thanh kéo hình ảnh -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper" id="swiperWrapper">
+                        <!-- Các ảnh sẽ được tự động thêm vào đây -->
+                    </div>
+                </div>
+            </div>
+            <div class="thong-tin-san-pham-container">
+              <h2 style="text-align:left">Vợt cầu lông Apacs Versus Pro New </h2>
+        <p style="color:red; text-align:left"><b>2.400.000 ₫</b></p>
+             <div class="nut-thao-tac">
+        <button class="mua-ngay">MUA NGAY</button>
+        <button class="them-gio-hang">THÊM VÀO GIỎ HÀNG</button>
+        <button class="thanh-toan-the">THANH TOÁN THẺ</button>
+        <button class="tra-gop">TRẢ GÓP QUA THẺ</button>
+        <button class="tra-cham">MUA TRẢ CHẬM</button>
+    </div>
+    <div class="uu-dai">
+        <h4>🎁 ƯU ĐÃI</h4>
+        <ul>
+            <li>Tặng 2 Quấn cán vợt Cầu Lông: <b>VNB 001, VS002</b> hoặc <b>Joto 001</b></li>
+            <li>Sản phẩm cam kết chính hãng</li>
+            <li>Một số sản phẩm sẽ được tặng bao đan hoặc bao nhung bảo vệ vợt</li>
+            <li>Thanh toán sau khi kiểm tra và nhận hàng (Giao khung vợt)</li>
+            <li>Bảo hành chính hãng theo nhà sản xuất (Trừ hư hỏng do địa, xước tay)</li>
+        </ul>
+        <h4>🎁 Ưu đãi thêm khi mua sản phẩm tại VNB Premium</h4>
+        <ul>
+            <li>Sơn logo mặt vợt miễn phí</li>
+            <li>Bảo hành lưới đan trong 72 giờ</li>
+            <li>Thay gen vợt miễn phí trọn đời</li>
+            <li>Tích lũy điểm thành viên Premium</li>
+            <li>Voucher giảm giá cho lần mua hàng tiếp theo</li>
+        </ul>
+    </div>
+   
+</div>
+
+        </div>
+    </div><br>
+    <center><h1 style="text-align:centh1;color:orange">Sản phẩm bạn có thể thích</h1></center>
+<div class="san-pham-goi-y">
+    
+    <div id="randomProducts" class="danh-sach-san-pham-goi-y"></div>
+</div>
+<div id="cuoitrang">
+   <footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Thông tin công ty</h3>
+      <ul>
+        <li><a href="#">Giới thiệu</a></li>
+        <li><a href="#">Chính sách bảo mật</a></li>
+        <li><a href="#">Chính sách đổi trả</a></li>
+        <li><a href="#">Điều khoản dịch vụ</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-section">
+      <h3>Sản phẩm</h3>
+      <ul>
+        <li><a href="#">Vợt cầu lông</a></li>
+        <li><a href="#">Lưới cầu lông</a></li>
+        <li><a href="#">Quần áo cầu lông</a></li>
+        <li><a href="#">Phụ kiện cầu lông</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-section">
+      <h3>Liên hệ</h3>
+      <ul>
+        <li><a href="tel:+123456789">Hotline: +123456789</a></li>
+        <li><a href="mailto:support@thethao.com">Email: support@thethao.com</a></li>
+        <li><a href="#">Địa chỉ: Số 123, Đường ABC, TP. HCM</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section social-media">
+      <h3>Follow Us</h3>
+      <a href="https://www.facebook.com" target="_blank" class="social-icon facebook"><img src="HA/FB.png" width="80" height="80"></a>
+      <a href="https://www.instagram.com" target="_blank" class="social-icon instagram"><img src="HA/ISG.png" width="40" height="40"></a>
+      <a href="https://www.youtube.com" target="_blank" class="social-icon youtube"><img src="HA/YT.png" width="60" height="60"></a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2024 Cửa Hàng Cầu Lông | Tất cả quyền được bảo lưu</p>
+  </div>
+</footer>
+</div>        
+
+  <!-- JavaScript -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+// Đường dẫn thư mục chứa ảnh
+const imageDirectory = "HA/anh vot/Vợt cầu lông Apacs Versus Pro New/";
+const imageFiles = ['1.png', '2.png', '3.png', '4.png', '5.png']; // Danh sách file ảnh
+
+// Hàm thay đổi hình ảnh chính khi click vào hình nhỏ trong swiper
+function changeMainImage(thumbnail) {
+    const mainImage = document.querySelector(".hinh-anh-san-pham img");
+    mainImage.src = thumbnail.src;  // Cập nhật đường dẫn ảnh chính
+    mainImage.alt = thumbnail.alt;  // Cập nhật mô tả ảnh chính
+    // Không cần thay đổi kích thước ảnh chính nữa, chỉ cần thay đổi ảnh
+}
+
+// Tự động thêm ảnh vào Swiper
+function loadImages() {
+    const swiperWrapper = document.getElementById("swiperWrapper");
+
+    imageFiles.forEach((file, index) => {
+        const imageUrl = imageDirectory + file;
+        const swiperSlide = document.createElement("div");
+        swiperSlide.classList.add("swiper-slide");
+
+        const imgElement = document.createElement("img");
+        imgElement.src = imageUrl;
+        imgElement.alt = `Sản phẩm ${index + 1}`;
+        imgElement.onclick = () => changeMainImage(imgElement);
+
+        swiperSlide.appendChild(imgElement);
+        swiperWrapper.appendChild(swiperSlide);
+    });
+}
+
+// Gọi hàm để tải ảnh
+loadImages();
+
+// Cấu hình Swiper
+const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    freeMode: true,
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 3,
+        },
+        1024: {
+            slidesPerView: 4,
+        },
+    },
+});
+    </script>
+  <script>// Danh sách các sản phẩm
+const allProducts = [
+    { name: "Set vợt cầu lông Lining Halbertec 9000 Limited - Olympic Paris 2024", image: "HA/anh vot/Set vợt cầu lông Lining Halbertec 9000 Limited - Olympic Paris 2024 12.300.000 ₫.png ", link: "a chi tiết vợt 1.html" },
+    { name: "Vợt cầu lông Apacs Versus Pro New", image: "HA/anh vot/Vợt cầu lông Apacs Versus Pro New 2.400.000 ₫.png", link: "a chi tiết vợt 2.html" },
+    { name: "Vợt Cầu Lông Lining Axforce 10", image: "HA/anh vot/Vợt Cầu Lông Lining Axforce 10 950.000 ₫.png", link: "a chi tiết vợt 3.html" },
+    { name: "Giày cầu lông Lining AYAT005-6", image: "HA/Giày/Giày cầu lông Lining AYAT005-6 chính hãng 2.330.000 ₫.png", link: "b chi tiết giày 1.html" },
+    { name: "Áo Cầu Lông Lining A320 Nam - Hồng Đen", image: "HA/Áo/Áo Cầu Lông Lining A320 Nam - Hồng Đen 130.000 ₫ .png", link: "c chi tiết áo 1.html" },
+    { name: "Váy cầu lông Kamito Galaxy 1 KMVS240223 - Navy", image: "HA/váy/Váy cầu lông Kamito Galaxy 1 KMVS240223 - Navy chính hãng 350.000 ₫.png", link: "d chi tiết váy 1.html" },
+    { name: "Túi cầu lông Kumpoo KB463", image: "HA/túi/Túi cầu lông Kumpoo KB463 820.000 ₫.png", link: "g chi tiết túi 1.html" },
+    { name: "Túi Cầu Lông Lining ABJU013-1", image: "HA/túi/Túi Cầu Lông Lining ABJU013-1 2.200.000 ₫.png", link: "g chi tiết túi 2.html" },
+];
+
+// Hàm tạo danh sách sản phẩm ngẫu nhiên
+function createRandomProducts() {
+    const randomProducts = document.getElementById("randomProducts");
+    const shuffled = allProducts.sort(() => 0.5 - Math.random()).slice(0, 12);
+
+    shuffled.forEach(product => {
+        const productDiv = document.createElement("div");
+        productDiv.classList.add("san-pham-goi-y-item");
+
+        const productLink = document.createElement("a");
+        productLink.href = product.link;
+
+        const productImage = document.createElement("img");
+        productImage.src = product.image;
+        productImage.alt = product.name;
+
+        const productName = document.createElement("p");
+        productName.textContent = product.name;
+
+        productLink.appendChild(productImage);
+        productDiv.appendChild(productLink);
+        productDiv.appendChild(productName);
+        randomProducts.appendChild(productDiv);
+    });
+}
+
+
+
+// Gọi hàm khi trang được tải
+createRandomProducts();</script>
+</body>
+
+
+</html>
